@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Campers News</title>
+	<link rel="stylesheet" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<h1 class="title">Campers News </h1>
+		<h2 class="subtitle">News from FreeCodeCamp</h2>
+	</header>
+
+
+	<script id="news-item-template" type="text/x-handlebars-template">
+			<li class="news-item">
+				<img data-avatar class="item-picture" src="{{avatar}}" alt="">
+				<a data-headline class="item-headline" href="{{link}}" target="_blank">{{headline}}</a>
+				<a data-user class="item-username" href="{{userUrl}}"  target="_blank">{{username}}</a>
+				<p data-rank class="item-rank">{{rank}}</p>
+				<p data-date class="item-timeposted">{{timeposted}}</p>
+			</li>
+	</script>
+
+	  
+
+	<!--Place to render de post-->
+	<ul id="news" class="news"></ul>
+	
+
+	<!-- javaScript			 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="main.js"></script>		
+</body>
+</html>
+
