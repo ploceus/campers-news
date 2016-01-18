@@ -10,7 +10,7 @@ html{
 }
 
 body {
-	background-color: #7FEE82;
+	background-color: #D0CD76;
 }
 
 a{
@@ -23,16 +23,16 @@ a:hover{
 
 header {
 	font-family: 'Sigmar One', cursive;
-	font-size: 1.5rem;
 	margin-bottom: .5em;
 }
 .title{
 	font-family: 'Kaushan Script', cursive;
-	color: #E4A034;
+	color: #D95858;
+	text-shadow: 2px 2px 3px #ff0;
 }	
 
 .subtitle {
-	color: #34C9E4;
+	color: rgb(48, 116, 93);
 	font-family: 'Fenix', serif;
 }
 .title, .subtitle{
@@ -41,25 +41,26 @@ header {
 }
 	
 .news {
-	display: flex;
-	flex-wrap: wrap;
-	font-size: 14px;
-	justify-content: space-around;
 	list-style: none;
 	margin: 0 auto;
 	max-width: 1200px;
 	padding: 0;
 
+	display: flex;
+	flex-wrap: wrap;
+	align-item: stretch;
+	justify-content: space-around;
 }
 
 .news-item {
 	background-color: #fff;
 	border-radius: 8px;
+	display: inline-block;
 	line-height: 1.5em;
 	margin-bottom: 1em;
 	padding: 1em;
-	width: 230px;
-	display: inline-block;
+	width: 90%;
+	/*font-size: 10px;*/
 }
 
 .news-item > *{
@@ -68,8 +69,38 @@ header {
 }
 .item-picture{
 	border-radius: 8px 8px 0 0;
-	max-width: 250px;
 	padding-left: 0;
 	width: 100%;
 }
 
+@media (min-width: 450px){
+	.news-item {
+		width: 48%;
+	}
+}
+
+@media (min-width: 750px){
+	.news-item {
+		width: 32%;
+	}
+
+	header {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 1000px){
+	.news-item {
+		width: 24%;
+	}
+}
+
+@media (min-width: 1200px){
+	header {
+		font-size: 1.8rem;
+	}
+
+	.news-item {
+		width: 19.5%;
+	}
+}

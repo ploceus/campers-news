@@ -59,7 +59,7 @@
 	}
 		
 	function renderTemplate (item) {
-		console.log(item);
+		// console.log(item);
 		// Grab the template script
 	  var theTemplateScript = $("#news-item-template").html();
 
